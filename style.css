@@ -1,0 +1,31 @@
+:root{
+    color-scheme: dark;
+}
+
+h1{
+    text-align: center;
+}
+
+#questionaire{
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+
+    & button{
+        padding: 0.5rem;
+    }
+}
+
+#players{
+    display: flex;
+    gap: 4rem
+}
+
+h3 + input{
+    border-radius: 0.5rem;
+    border: none;
+    padding: 0.5rem;
+}
+
