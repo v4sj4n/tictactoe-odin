@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
+
 <body>
     <h1>Tic Tac Toe</h1>
     <div id="questionaire">
@@ -16,12 +18,41 @@
                 <input type="text" id="player1Name">
             </div>
             <div id="second-player">
-                    <h3>Player two name:</h3>
+                <h3>Player two name:</h3>
                 <input type="text" id="player2Name">
             </div>
         </div>
         <button id="continue-game">Continue</button>
         <p>To avoid one player getting O or X everytime the marker is generated randomly</p>
     </div>
+    <main>
+
+        <div id="tictactoe-container">
+            <div class="box" id="box-1" row="0" column="0"></div>
+            <div class="box" id="box-2" row="0" column="1"></div>
+            <div class="box" id="box-3" row="0" column="2"></div>
+            <div class="box" id="box-4" row="1" column="0"></div>
+            <div class="box" id="box-5" row="1" column="1"></div>
+            <div class="box" id="box-6" row="1" column="2"></div>
+            <div class="box" id="box-7" row="2" column="0"></div>
+            <div class="box" id="box-8" row="2" column="1"></div>
+            <div class="box" id="box-9" row="2" column="2"></div>
+        </div>
+        <div>
+            <div>
+                <h3 id="player1-username"></h3>
+                <p id="player1-marker"></p>
+            </div>
+            <div>
+                <h3 id="player2-username"></h3>
+                <p id="player2-marker"></p>
+            </div>
+        </div>
+        <h2><span id="player-turn"></span>'s turn</h2>
+        <h1 id="winner"> </h1>
+        <button id="new-game">New Game</button>
+        
+    </main>
 </body>
+
 </html>
